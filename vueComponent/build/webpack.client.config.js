@@ -7,7 +7,7 @@ const {VueSSRClientPlugin} = require('vue-ssr-webpack-plugin')
 
 const config = merge(base, {
     entry: {
-        app: './src/entry-client.js'
+        app: './src/entry-client.ts'
     },
     plugins: [
         // strip dev-only code in Vue source

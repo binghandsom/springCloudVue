@@ -1,16 +1,17 @@
 /**
  * Created by wton on 2016/10/6.
  */
-import Vue from "vue";
-import VueRouter from "vue-router";
-import myViews from "../views/index.js";
+import * as Vue from "vue";
+import * as VueRouter from "vue-router";
+import myViews from "../views/index";
 import app from '../App.vue'
+
 Vue.use(VueRouter);
 
 export function createRouter() {
     return new VueRouter({
         mode: 'history',
-        scrollBehavior (to, from, savedPosition) {
+        scrollBehavior(to, from, savedPosition) {
             if (savedPosition) {
                 return savedPosition
             } else {

@@ -29,6 +29,14 @@ module.exports = {
                 exclude: /node_modules/
             },
             {
+                test: /\.ts$/,
+                exclude: /node_modules|vue\/src/,
+                loader: 'ts-loader',
+                options: {
+                    appendTsSuffixTo: [/\.vue$/]
+                }
+            },
+            {
                 test: /\.(png|jpg|gif|svg)$/,
                 loader: 'url-loader',
                 options: {
