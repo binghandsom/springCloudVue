@@ -9,8 +9,8 @@ export default {
         el.style.position = 'absolute'
     },
     inserted: function (el) {
-        let disX = null;
-        let disY = null;
+        let disX = 0;
+        let disY = 0;
         el.onmousedown = (el) => {
             disX = el.clientX - el.target.offsetLeft;
             disY = el.clientY - el.target.offsetTop;
